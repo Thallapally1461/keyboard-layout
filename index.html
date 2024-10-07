@@ -1,111 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KEYBOARD LAYOUT</title>
-  </head>
-  <style>
-    * {
-      margin: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
-    body {
-      height: 100vh;
-      width: 100vw;
-      background-color: #dde1e7;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .container {
-      height: 40vh;
-      width: 55%;
-      background-color: #dde1e7;
-      border-radius: 5px;
-      box-shadow: 0.8px 0.8px 4px 0px black;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 12px;
-    }
-    .row1 {
-      display: flex;
-      gap: 15px;
-      align-items: center;
-    }
-    .row2 {
-      display: flex;
-      gap: 15px;
-      align-items: center;
-    }
-    .row3 {
-      display: flex;
-      gap: 15px;
-      align-items: center;
-    }
 
-    input { 
-      height: 40px;
-      width: 40px;
-      border: none;
-      outline: none;
-      border-radius: 2px;
-      background-color: rgb(26, 17, 17);
-      color: white;
-      box-shadow: 0.8px 0.8px 3px 0px black;
-      font-size: small;
-       
-    }
-    input:focus{
-        font-size: 12px;
-        color: black;
-        background:linear-gradient(green, yellow);
-        box-shadow: inset 2px 2px 5px rgba(0,0,0,0.5),
-                    inset -3px -3px 7px rgba(255,255,255,0.05);
-      }
-  </style>
-  <body>
-    <div class="container">
-      <div class="row1">
-        <input type="button" value="Q" />
-        <input type="button" value="W" />
-        <input type="button" value="E" />
-        <input type="button" value="R" />
-        <input type="button" value="T" />
-        <input type="button" value="Y" />
-        <input type="button" value="U" />
-        <input type="button" value="I" />
-        <input type="button" value="O" />
-        <input type="button" value="P" />
-      </div>
-      <div class="row2">
-        <input type="button" value="A" />
-        <input type="button" value="S" />
-        <input type="button" value="D" />
-        <input type="button" value="F" />
-        <input type="button" value="G" />
-        <input type="button" value="H" />
-        <input type="button" value="J" />
-        <input type="button" value="K" />
-        <input type="button" value="L" />
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KEYBOARD LAYOUT</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+  * {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
 
-      <div class="row3">
-        <input type="button" value="Z" />
-        <input type="button" value="X" />
-        <input type="button" value="C" />
-        <input type="button" value="V" />
-        <input type="button" value="B" />
-        <input type="button" value="N" />
-        <input type="button" value="M" />
-      </div>
+  body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #dde1e7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-      <div class="row4">
-        <input type="button" value="SPACE" style="padding: 8px 130px" />
+  .container {
+    height: 55vh;
+    width: 83%;
+    background-color: #dde1e7;
+    border-radius: 5px;
+    box-shadow: 0.8px 0.8px 4px 0px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 15px;
+  }
+
+  .row1 {
+    display: flex;
+    gap: 12px;
+  }
+
+  .row2 {
+    display: flex;
+    gap: 12px;
+  }
+
+  .row3 {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .row4 {
+    display: flex;
+    gap: 12px;
+    align-content: flex-start;
+  }
+
+  .rownum {
+    display: flex;
+    align-content: flex-start;
+
+    gap: 12px;
+  }
+
+  .mainrow {
+    display: flex;
+    gap: 12px;
+  }
+
+  .tworow {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  input {
+    height: 40px;
+    width: 40px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    background-color: rgb(26, 17, 17);
+    color: white;
+    box-shadow: 0.8px 0.8px 3px 0px black;
+    font-size: small;
+    text-align: center;
+  }
+
+  input:focus {
+    font-size: 12px;
+    color: black;
+    background: linear-gradient(green, yellow);
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5),
+      inset -3px -3px 7px rgba(255, 255, 255, 0.05);
+  }
+
+  .functionkeys {
+    display: flex;
+    gap: 12px;
+  }
+
+  .functionkeys input {
+    height: 30px;
+  }
+
+  .siderow {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .secmain{
+    display: flex;
+    gap: 12px;
+  }
+  .lastrows{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+</style>
+
+<body>
+  <div class="container">
+    <div class="functionkeys">
+      <input type="button" value="Esc" style="margin-right: 25px" />
+      <input type="button" value="F1" />
+      <input type="button" value="F2" />
+      <input type="button" value="F3" />
+      <input type="button" value="F4" style="margin-right: 10px" />
+      <input type="button" value="F5" />
+      <input type="button" value="F6" />
+      <input type="button" value="F7" />
+      <input type="button" value="F8" style="margin-right: 10px" />
+      <input type="button" value="F9" />
+      <input type="button" value="F10" />
+      <input type="button" value="F11" />
+      <input type="button" value="F12" style="margin-right: 10px" />
+      <input type="button" value="PrtSc" />
+      <input type="button" value="Scroll" />
+      <input type="button" value="Pause" />
+    </div>
+    <div class="rownum">
+      <input type="button" value="~" />
+      <input type="button" value="!" />
+      <input type="button" value="@" />
+      <input type="button" value="#" />
+      <input type="button" value="$" />
+      <input type="button" value="%" />
+      <input type="button" value="^" />
+      <input type="button" value="&" />
+      <input type="button" value="*" />
+      <input type="button" value="(" />
+      <input type="button" value=")" />
+      <input type="button" value="_" />
+      <input type="button" value="=" />
+      <input type="button" value="Backspace" style="width: 90px; margin-right: 7px" />
+      <input type="button" value="Home" />
+      <input type="button" value="End" style="margin-right: 10px" />
+      <input type="button" value="Num" />
+      <input type="button" value="/" />
+      <input type="button" value="*" />
+      <input type="button" value="-" />
+    </div>
+    <div class="mainrow">
+      <div class="tworow">
+        <div class="row1">
+          <input type="button" value="tab" style="width: 80px" />
+          <input type="button" value="Q" />
+          <input type="button" value="W" />
+          <input type="button" value="E" />
+          <input type="button" value="R" />
+          <input type="button" value="T" />
+          <input type="button" value="Y" />
+          <input type="button" value="U" />
+          <input type="button" value="I" />
+          <input type="button" value="O" />
+          <input type="button" value="P" />
+          <input type="button" value="[" />
+          <input type="button" value="]" />
+        </div>
+        <div class="row2">
+          <input type="button" value="CAPS" style="width: 80px" />
+          <input type="button" value="A" />
+          <input type="button" value="S" />
+          <input type="button" value="D" />
+          <input type="button" value="F" />
+          <input type="button" value="G" />
+          <input type="button" value="H" />
+          <input type="button" value="J" />
+          <input type="button" value="K" />
+          <input type="button" value="L" />
+          <input type="button" value=":" />
+          <input type="button" value="'" />
+          <input type="button" value="\" />
+        </div>
+      </div>
+      <div class="enter" style="margin-right: 8px">
+        <input type="button" value="Enter" style="height: 93px; width: 50px" />
+      </div>
+      <div class="siderow">
+        <div class="row1">
+          <input type="button" value="Ins" />
+          <input type="button" value="PgUp" style="margin-right: 10px" />
+          <input type="button" value="7" />
+          <input type="button" value="8" />
+          <input type="button" value="9" />
+          <input type="button" value="+" />
+        </div>
+        <div class="row2">
+          <input type="button" value="Del" />
+          <input type="button" value="PgDn" style="margin-right: 10px" />
+          <input type="button" value="4" />
+          <input type="button" value="5" />
+          <input type="button" value="6" />
+          <input type="button" value="" />
+        </div>
       </div>
     </div>
-  </body>
+    <div class="secmain">
+      <div class="lastrows">
+        <div class="row3">
+          <input type="button" value="Shift" style="width: 55px" />
+          <input type="button" value="€" />
+          <input type="button" value="Z" />
+          <input type="button" value="X" />
+          <input type="button" value="C" />
+          <input type="button" value="V" />
+          <input type="button" value="B" />
+          <input type="button" value="N" />
+          <input type="button" value="M" />
+          <input type="button" value="<" />
+          <input type="button" value=">" />
+          <input type="button" value="?" />
+          <input type="button" value="\" />
+          <input type="button" value="Shift" style="width: 80px; margin-right: 32px" />
+          <input type="button" value="Up" style="margin-right: 34px" />
+          <input type="button" value="1" />
+          <input type="button" value="2" />
+          <input type="button" value="3" />
+        </div>
+
+        <div class="row4">
+          <input type="button" value="Ctrl" style="width: 55px" />
+          <input type="button" value="" style="width: 55px" />
+          <input type="button" value="Alt" style="width: 55px" />
+          <input type="button" value="SPACE" style="height: 40px; width: 315px" />
+          <input type="button" value="Alt Gr" style="width: 55px" />
+          <input type="button" value="" style="width: 55px" />
+          <input type="button" value="Ctrl" style="width: 55px; margin-right: 35px" />
+          <input type="button" value="Left" />
+          <input type="button" value="Down" />
+          <input type="button" value="Right" style="margin-right: 35px" />
+          <input type="button" value="0" />
+          <input type="button" value="." />
+        </div>
+      </div>
+      <input type="button" value="Enter" style="height: 92px;" />
+
+    </div>
+  </div>
+</body>
+
 </html>
